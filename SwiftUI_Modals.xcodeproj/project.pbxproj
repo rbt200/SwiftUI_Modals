@@ -42,7 +42,6 @@
 		E626D29824545F4E0008B8AC = {
 			isa = PBXGroup;
 			children = (
-				E626D2B8245469A30008B8AC /* FlagDetailView.swift */,
 				E626D2A324545F4E0008B8AC /* SwiftUI_Modals */,
 				E626D2A224545F4E0008B8AC /* Products */,
 			);
@@ -59,6 +58,7 @@
 		E626D2A324545F4E0008B8AC /* SwiftUI_Modals */ = {
 			isa = PBXGroup;
 			children = (
+				E626D2B8245469A30008B8AC /* FlagDetailView.swift */,
 				E626D2A424545F4E0008B8AC /* AppDelegate.swift */,
 				E626D2A624545F4E0008B8AC /* SceneDelegate.swift */,
 				E626D2A824545F4E0008B8AC /* ContentView.swift */,
