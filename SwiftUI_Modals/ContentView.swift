@@ -12,12 +12,15 @@ struct ContentView: View {
     
     @State private var showModal: Bool = false
     @State private var selectedFlag: String = ""
+    @State private var country: String = ""
     
     let flags = ["🇦🇽", "🇦🇱", "🇩🇿", "🇦🇸", "🇦🇩", "🇦🇴", "🇦🇮"]
     
     var body: some View {
         
         List {
+            
+            Text(self.country)
             
             ForEach(0..<self.flags.count) { index in
                 HStack {
@@ -31,11 +34,15 @@ struct ContentView: View {
                 
             }
             
-        }.sheet(isPresented: self.$showModal) {
-            HStack {
-                Text(self.selectedFlag)
-                    .font(.custom("Arial", size:     200))
-            }
+        }.sheet(isPresented: self.$showModal) {// show modal window
+            FlagDetailView(flag: self.selectedFlag, country: self.$country, showModal: self.$showModal)
+            // flag: to display
+            // country: to send and to get back changed
+            // showModal: to close the modal window
+//            HStack {
+//                Text(self.selectedFlag)
+//                    .font(.custom("Arial", size:     200))
+//            }
         }
             
         
