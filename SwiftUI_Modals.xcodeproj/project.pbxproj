@@ -14,6 +14,7 @@
 		E626D2AE24545F4F0008B8AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E626D2AD24545F4F0008B8AC /* Preview Assets.xcassets */; };
 		E626D2B124545F4F0008B8AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E626D2AF24545F4F0008B8AC /* LaunchScreen.storyboard */; };
 		E626D2B9245469A30008B8AC /* FlagDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D2B8245469A30008B8AC /* FlagDetailView.swift */; };
+		E626D2BB24547A960008B8AC /* FlagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E626D2BA24547A960008B8AC /* FlagViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E626D2B024545F4F0008B8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E626D2B224545F4F0008B8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E626D2B8245469A30008B8AC /* FlagDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagDetailView.swift; sourceTree = "<group>"; };
+		E626D2BA24547A960008B8AC /* FlagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 		E626D2A324545F4E0008B8AC /* SwiftUI_Modals */ = {
 			isa = PBXGroup;
 			children = (
-				E626D2B8245469A30008B8AC /* FlagDetailView.swift */,
 				E626D2A424545F4E0008B8AC /* AppDelegate.swift */,
 				E626D2A624545F4E0008B8AC /* SceneDelegate.swift */,
 				E626D2A824545F4E0008B8AC /* ContentView.swift */,
@@ -73,6 +74,8 @@
 		E626D2AC24545F4F0008B8AC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				E626D2B8245469A30008B8AC /* FlagDetailView.swift */,
+				E626D2BA24547A960008B8AC /* FlagViewModel.swift */,
 				E626D2AD24545F4F0008B8AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E626D2BB24547A960008B8AC /* FlagViewModel.swift in Sources */,
 				E626D2A524545F4E0008B8AC /* AppDelegate.swift in Sources */,
 				E626D2A724545F4E0008B8AC /* SceneDelegate.swift in Sources */,
 				E626D2A924545F4E0008B8AC /* ContentView.swift in Sources */,

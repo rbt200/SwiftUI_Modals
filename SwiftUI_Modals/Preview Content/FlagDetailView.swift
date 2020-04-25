@@ -10,25 +10,27 @@ import SwiftUI
 
 struct FlagDetailView: View {
     
-    var flag: String = ""
+    //    var flag: String = ""
     // @Binding means that this property is sent from another view
     // and can be changed here
     // and if it is changed then it will be reflacted in host view
-    @Binding var country: String
-    @Binding var showModal: Bool
+    //    @Binding var country: String
+    //    @Binding var showModal: Bool
+    
+    @Binding var flagVM: FlagViewModel
     
     var body: some View {
         VStack {
             
-            Text(flag)
+            Text(self.flagVM.flag)
                .font(.custom("Arial", size: 200))
             
-            TextField("Enter country name...", text: $country)
+            TextField("Enter country name...", text: self.$flagVM.country)
                 .padding()
                 .fixedSize()
             
             Button("Submit") {
-                self.showModal.toggle()
+                self.flagVM.showModal.toggle()
             }
         }
     }
@@ -36,6 +38,6 @@ struct FlagDetailView: View {
 
 struct FlagDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FlagDetailView(country: .constant("USA"), showModal: .constant(false))
+        FlagDetailView(flagVM: .constant(FlagViewModel()))
     }
 }
